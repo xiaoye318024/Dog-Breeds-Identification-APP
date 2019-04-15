@@ -1,0 +1,3 @@
+weights.best.Resnet50.hdf5: saved model weights with the best validation loss using Resnet50 bottleneck features
+weights.best.from_scratch.hdf5: saved model weights with the best validation loss for model created from scratch
+dog_app.ipynb: jupyter notebook to showcase work related to the above questions. The notebooks is exploratory in building a Convolutional Neural Networks pertaining to the question showcased by the notebook title. Markdown cells & comments were used to assist in walking through the thought process for individual steps.
