@@ -82,7 +82,7 @@ However, the accuracy is quite low for CNN created from scratch. For example, th
 
 To improve the accuracy of the APP, I decided to use transfer learning. However the bottleneck features I used in jupyter notebook, the Xecption bottleneck features file size is too big. As I'm working on this project using Udacity Project Workspace IDE and the workspace does not allowed to upload such a huge file(3GB+), so I tried ResNet-50 bottleneck features, the file size is within acceptable range, below 100MB. I built the CNN using ResNet-50 bottleneck features in the jupyter notebook and attained the test accuracy about 82%. Although the accuracy is not as good as using Xecption bottleneck features, but it's still quite good and acceptable.
 
-Using ResNet-50 bottleneck features, the mode can correctly identify the American water Spaniel
+Using ResNet-50 bottleneck features, the model can correctly identify the American water Spaniel
 ![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%206.JPG)
 
 And the others results are also quite good
