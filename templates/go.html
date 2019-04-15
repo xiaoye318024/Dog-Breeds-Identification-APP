@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+{% block title %}Results{% endblock %}
+{% block message %}
+    <hr />
+    <h4 class="text-center">Your image {{ filename }}</h4>
+    {% if filename %}
+        <img src="{{ url_for('send_file', filename=filename) }}">
+    {% endif %}
+    <h4>{{ Result_Message }}</h4>
+{% endblock %}
