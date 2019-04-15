@@ -56,9 +56,11 @@ The project I chose is one of the Udacity suggested projects. The data (dog imag
 
 ### Instructions<a name="instructions"></a>
 1. Run the following command to run the web app using CNN created from scratch
+
     `python app.py`
 
 2. Run the following command to run the web app using Transfer Learning: Resnet50 bottleneck features
+
     `python app_Resnet50.py`
 
 3. Go to http://0.0.0.0:3001/
