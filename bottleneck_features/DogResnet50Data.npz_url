@@ -1,0 +1,4 @@
+DogResnet50Data.npz: bottleneck features from another pre-trained CNN, I used this pre-trained CNN to build the APP
+
+Github not allow upload file size greater than 25MB, so I pasted the url of this file here:
+https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz

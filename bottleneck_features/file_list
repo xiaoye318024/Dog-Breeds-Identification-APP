@@ -1,1 +1,0 @@
-DogResnet50Data.npz: bottleneck features from another pre-trained CNN, I used this pre-trained CNN to build the APP
