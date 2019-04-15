@@ -71,19 +71,29 @@ In the jupyter notebook, I followed the walk through steps provided in the noteb
 2. I built a CNN using transfer learning, pre-trained Xception model as a fixed feature extractor, and attained the test accuracy about 85%.
 
 When building the APP, first I tried to make it easy, just use the CNN created from scratch to build the APP infrastructure. As for this project there is not much can be done for data visualization. I just keep the APP Interface simple and intuitive. Below is the interface a user will see when he/she runs the APP.
-![alt text](https://github.com/)
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%201.JPG)
 
 And the App works as expected. The Web APP asks user to upload an image and then return a message identifying an estimate of the canine’s breed. If supplied an image of a human, the APP will identify the resembling dog breed.
 
-However, the accuracy is quite low for CNN created from scratch. For example, the below image was mis-identified to
-![alt text](https://github.com/)
+However, the accuracy is quite low for CNN created from scratch. For example, the dog in below image was mis-identified to Chihuahua, which it is actually a American water Spaniel
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%202.JPG)
 
 To improve the accuracy of the APP, I decided to use transfer learning. However the bottleneck features I used in jupyter notebook, the Xecption bottleneck features file size is too big. As I'm working on this project using Udacity Project Workspace IDE and the workspace does not allowed to upload such a huge file(3GB+), so I tried ResNet-50 bottleneck features, the file size is within acceptable range, below 100MB. I built the CNN using ResNet-50 bottleneck features in the jupyter notebook and attained the test accuracy about 82%. Although the accuracy is not as good as using Xecption bottleneck features, but it's still quite good and acceptable.
-![alt text](https://github.com/)
+
+Using ResNet-50 bottleneck features, the mode can correctly identify the American water Spaniel
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%206.JPG)
+
+And the others results are also quite good
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%203.JPG)
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%205.JPG)
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%208.JPG)
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%209.JPG)
 
 ## Conclusion<a name="conclusion"></a>
 
-The Model/APP works as expected. However the accuracy can still be improved as the predictions of some images I tried are not accurate, just close to the actual breed. It's funny to use human images to feed the algorithm. Most human images were classified as dog breed Silky_terrier, quite intersting.
+The Model/APP works as expected. However the accuracy can still be improved as the predictions of some images I tried are not accurate, just close to the actual breed and there is one image with human that the algorithm was not able to detect dogs or human in the image, as shown in screenshots below.
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%204.JPG)
+![alt text](https://raw.githubusercontent.com/xiaoye318024/Dog-Breeds-Identification-APP/master/screenshots/DBI%20Screenshot%207.JPG)
 
 Possible improvement can be implement:
 1. Add image augmentation to handle different angles, magnitude, position and partial obscurations (glasses, masks, etc).
