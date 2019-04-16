@@ -27,7 +27,7 @@ Metrics used to measure performance of the model to be built is the dog breeds I
 
 ## File Descriptions <a name="files"></a>
 
-The project I chose is one of the Udacity suggested projects. The data (dog images) is from Udacity Deep Learning workspace which is huge and I tried but not able to download is. Thus I will not attached the data in this Repository.
+The project I chose is one of the Udacity suggested projects. The data (dog images) is from Udacity Deep Learning workspace which is huge and I tried but not able to download is. I will include the link of the datasets used in this project in Instructions below.
 
 - In working_directory/bottleneck_features:
   * DogResnet50Data.npz:    bottleneck features from another pre-trained CNN, I used this pre-trained CNN to build the APP
@@ -40,9 +40,12 @@ The project I chose is one of the Udacity suggested projects. The data (dog imag
 
 - In working_directory/models:
     * weights.best.Resnet50.hdf5:        saved model weights with the best validation loss using Resnet50 bottleneck features
-    * weights.best.from_scratch.hdf5:    saved model weights with the best validation loss for model created from scratch
+    * weights.best.from_scratch.hdf5.gz: saved model weights with the best validation loss for model created from scratch
     * dog_app.ipynb:                     jupyter notebook to showcase work related to the above questions. The notebooks is exploratory in building a Convolutional Neural Networks pertaining to the question showcased by the notebook title. Markdown cells & comments were used to assist in walking through the thought process for individual steps.
 
+- In working_directory/requirements:
+    * requirements.txt: Requirements files
+    
 - In working_directory/templates:
     * *.html: HTML templates for the web app.
 
@@ -55,15 +58,36 @@ The project I chose is one of the Udacity suggested projects. The data (dog imag
     * app_Resnet50.py:                 Start the Python server for the web app and prepare visualizations(for CNN created from using Transfer Learning: Resnet50 bottleneck features).
 
 ### Instructions<a name="instructions"></a>
-1. Run the following command to run the web app using CNN created from scratch
+
+1. Clone the repository and navigate to the downloaded folder.
+```	
+git clone https://github.com/xiaoye318024/Dog-Breeds-Identification-APP.git
+cd dog-project
+```
+
+2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
+
+3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+
+4. unzip weights.best.from_scratch.hdf5.gz under models folder
+
+5. Download the [VGG-16 bottleneck features](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`.
+
+6. Create (and activate) a new environment.
+	```
+	conda env create -f requirements/requirements.txt
+	source activate dog-project
+	```  
+
+7. To use the APP I created, run the following command to start the web app using CNN created from scratch
 
     `python app.py`
 
-2. Run the following command to run the web app using Transfer Learning: Resnet50 bottleneck features
+8. To use the APP I created, run the following command to start the web app using Transfer Learning: Resnet50 bottleneck features
 
     `python app_Resnet50.py`
 
-3. Go to http://0.0.0.0:3001/
+9. Go to http://0.0.0.0:3001/
 
 ## Results<a name="results"></a>
 
