@@ -7,8 +7,9 @@ A Udacity Data Scientist Nanodegree Capstone Project
 2. [Project Overview](#motivation)
 3. [File Descriptions](#files)
 4. [Instructions](#instructions)
-5. [Results](#results)
-6. [Conclusion](#conclusion)
+5. [Analysis](#analysis)
+6. [Results](#results)
+7. [Conclusion](#conclusion)
 
 ## Installation <a name="installation"></a>
 
@@ -65,9 +66,9 @@ git clone https://github.com/xiaoye318024/Dog-Breeds-Identification-APP.git
 cd dog-project
 ```
 
-2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/dogImages`. 
+2. Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/data/dog_images`. 
 
-3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
+3. Download the [human dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip).  Unzip the folder and place it in the repo, at location `path/to/dog-project/data/lfw`.  If you are using a Windows machine, you are encouraged to use [7zip](http://www.7-zip.org/) to extract the folder. 
 
 4. unzip weights.best.from_scratch.hdf5.gz under models folder
 
@@ -88,6 +89,17 @@ cd dog-project
     `python app_Resnet50.py`
 
 9. Go to http://0.0.0.0:3001/
+
+## Analysis<a name="analysis"></a>
+
+As showcased in the jupyter notebook, I have below analysis results of the input dataset:
+
+There are 133   total      dog categories.
+There are 8351  total      dog images.
+There are 6680  training   dog images.
+There are 835   validation dog images.
+There are 836   test       dog images.
+There are 13233 total    human images.
 
 ## Results<a name="results"></a>
 
