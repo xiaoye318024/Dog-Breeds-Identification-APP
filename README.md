@@ -93,14 +93,13 @@ cd dog-project
 ## Analysis<a name="analysis"></a>
 
 As showcased in the jupyter notebook, I have below analysis results of the input dataset:
-'''
-There are 133   total      dog categories.
-There are 8351  total      dog images.
-There are 6680  training   dog images.
-There are 835   validation dog images.
-There are 836   test       dog images.
-There are 13233 total    human images.
-'''
+
+  * There are 133   total      dog categories.
+  * There are 8351  total      dog images.
+  * There are 6680  training   dog images.
+  * There are 835   validation dog images.
+  * There are 836   test       dog images.
+  * There are 13233 total    human images.
 
 ## Results<a name="results"></a>
 
